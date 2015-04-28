@@ -1,15 +1,19 @@
 #metrics {
     position: absolute;
     display: none;
-    top: 0;
+    top: 33%;
     width: 60%;
     padding: 10px;
     margin: 0 20%;
 }
 
+small {
+    w
+}
+
 div.metric {
     display: block;
-    margin: 2px 0;
+    margin: 5px 0;
     height: 20px;
 }
 
