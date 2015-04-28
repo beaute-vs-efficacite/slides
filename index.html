@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -35,6 +36,44 @@
 	</head>
 	<body>
 		<div class="reveal">
+			<div id="metrics">
+				<div class="metric">
+					<label>Motivation :</label>
+					<div class="progress-containter">
+						<div id="motivation" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+				<div class="metric">
+					<label>Valeur du produit :</label>
+					<div class="progress-containter">
+						<div id="value" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+				<div class="metric">
+					<label>Respect de la deadline :</label>
+					<div class="progress-containter">
+						<div id="deadline" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+				<div class="metric">
+					<label>Dette technique :</label>
+					<div class="progress-containter">
+						<div id="debt" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+				<div class="metric">
+					<label>Respect du budget :</label>
+					<div class="progress-containter">
+						<div id="budget" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+				<div class="metric">
+					<label>Satisfaction du client :</label>
+					<div class="progress-containter">
+						<div id="satisfaction" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+			</div>
 			<div class="slides">
 				<section>
 					<h1>
@@ -148,6 +187,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/custom.js"></script>
 
 		<script>
 
@@ -171,6 +211,8 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+			new Metric();
 
 		</script>
 
