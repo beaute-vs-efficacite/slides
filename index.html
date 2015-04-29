@@ -38,9 +38,9 @@
 		<div class="reveal">
 			<div id="metrics">
 				<div class="metric">
-					<label>Motivation :</label>
+					<label>Maitrise de la dette technique :</label>
 					<div class="progress-containter">
-						<div id="motivation" class="progress-bar" style="width: 0%"></div>
+						<div id="debt" class="progress-bar" style="width: 0%"></div>
 					</div>
 				</div>
 				<div class="metric">
@@ -56,15 +56,15 @@
 					</div>
 				</div>
 				<div class="metric">
-					<label>Dette technique :</label>
-					<div class="progress-containter">
-						<div id="debt" class="progress-bar" style="width: 0%"></div>
-					</div>
-				</div>
-				<div class="metric">
 					<label>Respect du budget :</label>
 					<div class="progress-containter">
 						<div id="budget" class="progress-bar" style="width: 0%"></div>
+					</div>
+				</div>
+				<div class="metric">
+					<label>Motivation de l'équipe:</label>
+					<div class="progress-containter">
+						<div id="motivation" class="progress-bar" style="width: 0%"></div>
 					</div>
 				</div>
 				<div class="metric">
@@ -109,12 +109,14 @@
 				<section>
 					<h2>1. Minimum viable product</h2>
 
-				    <p class="fragment">
-				    	<img src="./assets/GoodFastCheap.png" width="360">
-			    	</p>
-				    <p class="fragment">
-						<img src="./assets/Illuminati.png" class="fragment" width="360">
-					</p>
+					<div class="triangle">
+					    <div class="fragment">
+					    	<img src="./assets/GoodFastCheap.png" width="360">
+				    	</div>
+					    <div id="illuminati" class="fragment">
+							<img src="./assets/Illuminati.png" width="360">
+						</div>
+					</div>
 				</section>
 
 				<section
@@ -150,7 +152,7 @@
 				</section>
 
 				<section>
-					<h2>3. MARDE ! La livraison c'est dans 2 mois</h2>
+					<h2>3. MERDE ! La livraison c'est dans 2 mois</h2>
 					<img src="assets/scream.gif" style="width: 50%;">
 				</section>
 
@@ -177,7 +179,8 @@
 				</section>
 
 				<section>
-					<img src="" alt="Requêtes SQL">
+					<h3>Gérer "LA grosse requête SQL"</h3>
+					<img src="assets/sql.gif">
 				</section>
 
 				<section
@@ -222,16 +225,16 @@
 
 				<section>
 					<p style="float: left; width: 50%;">
-						<img />
+						<img src="assets/emerick42.jpg" class="photo" />
 						<span style="display: block;">Emeric Kasbarian</span>
 						<a href="#emerick42">@emerick42</a>
 					</p>
 					<p style="float: left; width: 50%;">
-						<img />
+						<img src="assets/tom32i.jpg" class="photo" />
 						<span style="display: block;">Thomas Jarrand</span>
 						<a href="#tom32i">@tom32i</a>
 					</p>
-					<small class="follow">Go follow PLZ</small>
+					<small id="gofollow">Go follow PLZ</small>
 				</section>
 			</div>
 		</div>

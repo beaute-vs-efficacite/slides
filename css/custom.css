@@ -7,10 +7,6 @@
     margin: 0 20%;
 }
 
-small {
-    w
-}
-
 div.metric {
     display: block;
     margin: 5px 0;
@@ -22,7 +18,7 @@ div.metric {
     margin-right: 10px;
     font-size: 50%;
     font-weight: normal;
-    width: 200px;
+    width: 250px;
     text-align: right;
 }
 
@@ -51,9 +47,45 @@ div.metric {
             transition: width .6s ease;
 }
 
-#motivation { background-color: red; }
-#value { background-color: yellow; }
-#deadline { background-color: green; }
-#debt { background-color: purple; }
-#budget { background-color: pink; }
-#satisfaction { background-color: orange; }
+#motivation { background-color: #FF0000; }
+#value { background-color: #FFFF00; }
+#deadline { background-color: #33CC33; }
+#debt { background-color: #6699FF; }
+#budget { background-color: #FF66FF; }
+#satisfaction { background-color: #FF6600; }
+
+small {
+    color: #999;
+}
+
+.triangle {
+    width: 100%;
+    position: relative;
+}
+
+#illuminati {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transition: top 1s;
+}
+
+#illuminati.visible {
+    top: 0;
+}
+
+#illuminati img {
+    background: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+img.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#gofollow {
+    opacity: 0.5;
+}

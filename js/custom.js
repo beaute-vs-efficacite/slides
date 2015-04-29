@@ -46,8 +46,9 @@ Metric.prototype.close = function() {
 Metric.prototype.onSlidechange = function(event) {
     var slide  = event.currentSlide;
 
-    if (slide.hasAttribute('data-cursor')) {
-        this.loadSlide(slide);
+    if (slide.hasAttribute('data-motivation')) {
+        this.open();
+        setTimeout(function () { this.loadSlide(slide); }.bind(this), 500)
     } else {
         this.close();
     }
@@ -63,7 +64,6 @@ Metric.prototype.loadSlide = function(slide) {
         metric = this.metrics[i];
         this.set(metric, slide.getAttribute('data-' + metric));
     }
-    this.open();
 };
 
 /**
